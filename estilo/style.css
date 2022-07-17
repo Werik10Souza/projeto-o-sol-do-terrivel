@@ -21,12 +21,13 @@
 
 html,body {
     min-height: 100vh;
-    background-color: var(--cor1);
+    background-color: var(--cor0);
     font-family: var(--fonte1);
 }
 
 header {
-    background-color: var(--cor6);
+    margin-top: -65px;
+    background-color: var(--cor1);
     color: var(--cor0);
     text-align: center;
 }
@@ -43,7 +44,7 @@ header > p {
 }
 
 header a, footer a {
-    color: var(--cor0);
+    color: var(--cor6);
     text-decoration: none;
     font-weight: bolder;
 }
@@ -71,5 +72,33 @@ section.normal {
 }
 
 section.imagem {
-    
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgb(0, 0, 0, 0.473);
+
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.623);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url('../imagens/death.jpeg');
+    background-position: right center;     
+}
+
+section#img02 {
+background-position: top center;
+    background-image: url('../imagens/king.jpeg');
+}
+
+footer {
+    color: white;   
+    background-color: var(--cor1);
+    text-align: center;
 }
