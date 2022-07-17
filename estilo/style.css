@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:'Kingman-Regular' ;
+    src: url('../fontes/Kingman-Regular.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #ffffff;
+    --cor1: #4041AD;
+    --cor3: #9192FF;
+    --cor4: #7576FA;
+    --cor5: #AD9111;
+    --cor6: #FAD21F;
+    --cor7: #000000;
+
+    --fonte1: Verdana, Genebra, tahoma, sans-serif;
+    --fonte2:'Kingman-Regular', cursiva;
+}
+
+html,body {
+    min-height: 100vh;
+    background-color: var(--cor1);
+    font-family: var(--fonte1);
+}
+
+header {
+    background-color: var(--cor6);
+    color: var(--cor0);
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 15px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 7vw;
+}
+
+header > p {
+    padding-bottom: 15px;
+}
+
+header a, footer a {
+    color: var(--cor0);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    line-height: 2em;
+    padding-left: 15px;
+    font-family: var(--fonte2);
+    font-size: 3.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: var(--cor0);
+    color: var(--cor7);
+}
+
+section.imagem {
+    
+}
